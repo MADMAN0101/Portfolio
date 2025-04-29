@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithin Kummari - Cybersecurity Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Deeper dark background */
+            color: #d1d5db; /* Softer light text */
+        }
+        .bg-primary {
+            background-color: #374151; /* Dark gray primary */
+        }
+        .text-primary {
+            color: #6b7280; /* Medium gray text */
+        }
+        .hover\:text-accent:hover {
+            color: #8ab4f8; /* A more subtle blue accent on hover */
+        }
+        .bg-secondary {
+            background-color: #1f2937; /* Slightly lighter dark gray */
+        }
+        #mobile-menu {
+            background-color: rgba(17, 24, 39, 0.95); /* Darker mobile menu background */
+        }
+
+        .bg-tertiary{
+            background-color: #111827;
+        }
+
+        .text-gray-700 {
+            color: #9ca3af; /* Even softer text */
+        }
+
+        .bg-white {
+            background-color: #1f2937; /* Darker card background */
+        }
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+        }
+
+        .text-gray-800 {
+            color: #e5e7eb; /* Lighter card text */
+        }
+
+        .bg-accent {
+            background-color: #2563eb; /* More professional blue */
+        }
+
+        .hover\:bg-accent-darker:hover {
+            background-color: #1e40af; /* Darker shade on hover */
+        }
+
+        .border-accent {
+            border-color: #60a5fa; /* Lighter blue border */
+        }
+        .text-accent{
+            color: #60a5fa;
+        }
+
+        .marker{
+            color:#60a5fa;
+        }
+
+    </style>
+</head>
+<body class="bg-tertiary">
+    <header class="bg-primary text-white py-6 px-4 sm:px-6 md:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <h1 class="text-2xl font-semibold">Nithin Kummari</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-accent transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-accent transition duration-300">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-accent transition duration-300">Projects</a></li>
+                    <li><a href="#certifications" class="hover:text-accent transition duration-300">Certifications</a></li>
+                    <li><a href="#contact" class="hover:text-accent transition duration-300">Contact</a></li>
+                    <li><a href="#resume" class="hover:text-accent transition duration-300">Resume</a></li>
+                </ul>
+            </nav>
+            <button id="hamburger-btn" class="md:hidden text-white focus:outline-none" aria-label="Toggle Navigation">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-50">
+        <div class="bg-secondary w-80 h-full absolute right-0 p-6">
+            <div class="flex justify-end mb-4">
+                <button id="close-menu-btn" class="text-white focus:outline-none" aria-label="Close Menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="block">
+                <ul class="space-y-4">
+                    <li><a href="#about" class="block text-lg text-white hover:text-accent transition duration-300">About</a></li>
+                    <li><a href="#skills" class="block text-lg text-white hover:text-accent transition duration-300">Skills</a></li>
+                    <li><a href="#projects" class="block text-lg text-white hover:text-accent transition duration-300">Projects</a></li>
+                    <li><a href="#certifications" class="block text-lg text-white hover:text-accent transition duration-300">Certifications</a></li>
+                    <li><a href="#contact" class="block text-lg text-white hover:text-accent transition duration-300">Contact</a></li>
+                    <li><a href="#resume" class="block text-lg text-white hover:text-accent transition duration-300">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <main class="container mx-auto py-10 px-4 sm:px-6 md:px-8">
+        <section id="about" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="your-profile-picture.jpg" alt="Nithin Kummari" class="rounded-full shadow-lg" />
+                </div>
+                <div class="md:w-2/3 text-gray-700">
+                    <p class="text-lg">
+                        As a cybersecurity enthusiast, I am driven to protect digital landscapes from potential threats. My journey in cybersecurity, fueled by a Bachelor's degree in Computer Science Engineering with a specialization in Cyber Security from St. Mary's Engineering College, has equipped me with a robust skill set in Vulnerability Assessment and Penetration Testing (VAPT), ethical hacking, and network security. I am committed to continuous learning and staying at the forefront of cybersecurity advancements to provide effective and innovative solutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Vulnerability Assessment</h3>
+                        <p class="text-gray-700">
+                            Proficient in identifying security weaknesses using tools like OpenVAS, Nikto, WPScan (Kali Linux, Ubuntu, Windows).
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Penetration Testing</h3>
+                        <p class="text-gray-700">
+                            Experienced in simulating cyberattacks to evaluate security, utilizing Metasploit Framework, Burp Suite (Community), OWASP ZAP, SQLmap, BeEF (Kali Linux, Ubuntu, Windows).
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Privilege Escalation</h3>
+                        <p class="text-gray-700">
+                            Skilled in techniques to gain elevated access (Kali Linux, Ubuntu, Windows).
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Network Security</h3>
+                        <p class="text-gray-700">
+                            Expertise in network analysis and security tools (Nmap, Wireshark, TCPDump, Aircrack-ng, Ettercap, CommView).
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Security Operations</h3>
+                        <p class="text-gray-700">
+                            Knowledge of SIEM tools and security monitoring (OSSEC, Wazuh, Security Onion, ELK Stack, Graylog, Splunk).
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Identity and Access Management (IAM)</h3>
+                        <p class="text-gray-700">
+                            Experience with LDAP, Kerberos, Keycloak, and Active Directory.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Termux (Android)</h3>
+                        <p class="text-gray-700">
+                            Nmap, Metasploit, Hydra, SQLmap, Nikto, Netcat, John the Ripper.
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Firewall Management</h3>
+                        <p class="text-gray-700">
+                            Configured and managed UFW to control network traffic, implemented custom rules for port management.
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Password Analysis</h3>
+                        <p class="text-gray-700">
+                            Analyzed password policies, developed algorithms to rate password security, and conducted tests to identify weak passwords.
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Keylogger Development</h3>
+                        <p class="text-gray-700">
+                            Developed a keylogger using Python, ensured accurate keystroke logging, and implemented techniques to prevent antivirus detection.
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Programming Languages</h3>
+                        <p class="text-gray-700">
+                            Basics of PYTHON, HTML, CSS
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Operating Systems</h3>
+                        <p class="text-gray-700">
+                            Windows, Kali Linux, Ubuntu
+                        </p>
+                    </div>
+                    <div class="bg-secondary rounded-md shadow-md p-6 mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-4">Additional Skills</h3>
+                        <p class="text-gray-700">
+                            Website Development (Frontend), Prompt Engineering, Hardware Assembling, Project Management, Digital Marketing
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Projects</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">A Design of Counters and Compressors Using Sorting Networks</h3>
+                    <p class="text-gray-700 mb-4">
+                        This project focused on improving the speed and efficiency of digital signal processing, which is crucial for many technologies. I designed new types of counters and compressors – essential components in these systems – using a technique called 'sorting networks.' This resulted in faster calculations and better performance.
+                    </p>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Borrow Select Subtractor Using BLO and RBHS Logic for Low Power, Area, and Efficiency</h3>
+                    <p class="text-gray-700 mb-4">
+                       This project aimed to enhance the efficiency and reduce the power consumption of subtraction processes in digital systems. I explored alternative logic designs to improve upon traditional methods, which can sometimes slow down arithmetic operations.
+                    </p>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Unconfigured Firewall in Linux</h3>
+                    <p class="text-gray-700 mb-4">
+                        Configured and managed UFW to control inbound and outbound traffic. Implemented custom rules for port management, securing the system from unauthorized access.
+                    </p>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Password Analyzer</h3>
+                    <p class="text-gray-700 mb-4">
+                        Analyzed password policies to determine tool effectiveness. Developed algorithms to rate passwords based on security parameters. Conducted tests to identify weak passwords and provided recommendations for improvement.
+                    </p>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Keylogger Development</h3>
+                    <p class="text-gray-700 mb-4">
+                        Developed a keylogger using Python language. Ensured accurate keystroke logging. Implemented techniques to prevent antivirus detection.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-secondary rounded-md shadow-md p-4 flex items-center">
+                    <i class="fas fa-shield-alt text-accent mr-4 text-2xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Network Defense Essentials (NDE)</h4>
+                        <p class="text-gray-700">EC-Council</p>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-4 flex items-center">
+                    <i class="fas fa-shield-alt text-accent mr-4 text-2xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Ethical Hacking Essentials (EHE)</h4>
+                        <p class="text-gray-700">EC-Council</p>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-4 flex items-center">
+                    <i class="fas fa-shield-alt text-accent mr-4 text-2xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">SQL Injection Attacks</h4>
+                        <p class="text-gray-700">EC-Council</p>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-4 flex items-center">
+                    <i class="fas fa-book-open text-accent mr-4 text-2xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Ethical Hacking 101: Beginners Guide to Ethical Hacking</h4>
+                        <p class="text-gray-700">Simplilearn</p>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-4 flex items-center">
+                    <i class="fas fa-book-open text-accent mr-4 text-2xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Introduction to Ethical Hacking</h4>
+                        <p class="text-gray-700">Great Learning</p>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-4 flex items-center">
+                    <i class="fas fa-user-shield text-accent mr-4 text-2xl"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Cyber Security Analyst</h4>
+                        <p class="text-gray-700">CareerX</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Experience</h2>
+            <div class="bg-secondary rounded-md shadow-md p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Freelance Cybersecurity Trainer</h3>
+                <p class="text-gray-700 mb-4">
+                    As a freelance cybersecurity trainer, I developed and delivered foundational courses to students. My curriculum included:
+                </p>
+                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                    <li>Setting up secure virtual environments using Virtual Box (Linux distributions).</li>
+                    <li>Providing hands-on training in Kali Linux, covering OS fundamentals, command-line operations, and file system management.</li>
+                    <li>Guiding students through ethical hacking exercises on vulnerable virtual machines (e.g., Bulldog, Mr. Robot), fostering practical skills in a safe environment.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="internships" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Internships</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Cyber Security Intern</h3>
+                    <p class="text-gray-700">Pinnacle Labs</p>
+                </div>
+                <div class="bg-secondary rounded-md shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Virtual Internships</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Cyber Security Management Job Simulation - ANZ</li>
+                        <li>Forage Cybersecurity Analyst Job Simulation - TATA, Forage, Mastercard</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Contact Me</h2>
+            <div class="bg-secondary rounded-md shadow-md p-6">
+                <p class="text-lg text-gray-700 mb-4">
+                    Feel free to reach out to me via email or connect with me on LinkedIn.
+                </p>
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-envelope text-accent mr-4 text-xl"></i>
+                    <a href="mailto:nithin.kummari1897@gmail.com" class="text-accent hover:text-blue-800 transition duration-300">nithin.kummari1897@gmail.com</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin text-accent mr-4 text-xl"></i>
+                    <a href="https://www.linkedin.com/in/nithin-kummari/\" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-blue-800 transition duration-300\">LinkedIn Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="mb-16">
+            <h2 class="text-3xl font-semibold text-accent text-center mb-8">Resume</h2>
+            <div class="flex justify-center">
+                <a href="Nithin-Kummari CV.pdf" download="Nithin-Kummari-Resume.pdf" class="bg-accent hover:bg-accent-darker text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                    <i class="fas fa-download mr-2"></i> Download Resume
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-primary text-gray-300 py-4 text-center">
+        <p>&copy; 2024 Nithin Kummari. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const closeMenuBtn = document.getElementById("close-menu-btn");
+        const mobileMenuLinks = mobileMenu.querySelectorAll("a");
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const sections = document.querySelectorAll('section');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        hamburgerBtn.addEventListener("click", toggleMobileMenu);
+        closeMenuBtn.addEventListener("click", toggleMobileMenu);
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener("click", toggleMobileMenu);
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!mobileMenu.classList.contains('hidden') && !mobileMenu.contains(event.target) && event.target !== hamburgerBtn) {
+                toggleMobileMenu();
+            }
+        });
+
+       function updateActiveNavLink() {
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNavLink);
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
